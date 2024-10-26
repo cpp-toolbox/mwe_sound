@@ -1,0 +1,12 @@
+[submodule "scripts"]
+	path = scripts
+	url = git@github.com:cpp-toolbox/scripts.git
+[submodule "src/sound_system"]
+	path = src/sound_system
+	url = git@github.com:cpp-toolbox/sound_system.git
+[submodule "src/fixed_frequency_loop"]
+	path = src/fixed_frequency_loop
+	url = git@github.com:cpp-toolbox/fixed_frequency_loop.git
+[submodule "src/stopwatch"]
+	path = src/stopwatch
+	url = git@github.com:cpp-toolbox/stopwatch.git
