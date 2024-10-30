@@ -52,7 +52,13 @@ void play_sounds(double delta_t, SoundSystem &sound_system) {
 }
 
 int main() {
-    SoundSystem sound_system(100);
+    std::unordered_map<SoundType, std::string> sound_type_to_file = {
+        {SoundType::SOUND_1, "assets/sounds/BD2575.WAV"},
+        {SoundType::SOUND_2, "assets/sounds/CH.WAV"},
+        {SoundType::SOUND_3, "assets/sounds/MC50.WAV"},
+    };
+
+    SoundSystem sound_system(100, sound_type_to_file);
     FixedFrequencyLoop ffl;
 
     auto play_sound_closure = [&](double dt) { play_sounds(dt, sound_system); };
