@@ -6,6 +6,7 @@ enum class SoundType {
     SOUND_1,
     SOUND_2,
     SOUND_3,
+    SOUND_4,
 };
 
 #endif // SOUND_TYPES_HPP

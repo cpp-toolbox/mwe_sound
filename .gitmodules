@@ -10,3 +10,6 @@
 [submodule "src/stopwatch"]
 	path = src/stopwatch
 	url = git@github.com:cpp-toolbox/stopwatch.git
+[submodule "src/utility/unique_id_generator"]
+	path = src/utility/unique_id_generator
+	url = git@github.com:cpp-toolbox/unique_id_generator.git

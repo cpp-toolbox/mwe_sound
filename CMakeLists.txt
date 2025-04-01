@@ -18,6 +18,8 @@ add_executable(${PROJECT_NAME} ${SOURCES})
 
 add_dependencies(${PROJECT_NAME} copy_resources)
 
+
 find_package(SndFile)
 find_package(OpenAL)
-target_link_libraries(${PROJECT_NAME} SndFile::sndfile OpenAL::OpenAL)
+find_package(glm)
+target_link_libraries(${PROJECT_NAME} SndFile::sndfile OpenAL::OpenAL glm::glm)
